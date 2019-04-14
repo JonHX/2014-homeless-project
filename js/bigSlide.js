@@ -1,9 +1,9 @@
 /*! bigSlide - v0.5.0 - 2014-09-12
-* http://ascott1.github.io/bigSlide.js/
-* Copyright (c) 2014 Adam D. Scott; Licensed MIT http://en.wikipedia.org/wiki/MIT_License */
+* https://ascott1.github.io/bigSlide.js/
+* Copyright (c) 2014 Adam D. Scott; Licensed MIT https://en.wikipedia.org/wiki/MIT_License */
 /*! bigSlide - v0.4.3 - 2014-01-25
-* http://ascott1.github.io/bigSlide.js/
-* Copyright (c) 2014 Adam D. Scott; Licensed MIT http://en.wikipedia.org/wiki/MIT_License */
+* https://ascott1.github.io/bigSlide.js/
+* Copyright (c) 2014 Adam D. Scott; Licensed MIT https://en.wikipedia.org/wiki/MIT_License */
 
 
 (function($) {

@@ -1,4 +1,4 @@
-// License: MIT , LICENSE FOUND http://en.wikipedia.org/wiki/MIT_License
+// License: MIT , LICENSE FOUND https://en.wikipedia.org/wiki/MIT_License
 // found at https://parall.ax/blog/view/2985/tutorial-creating-an-interactive-svg-map, heavily edited for personal use
 // all information and details found in public domain
 var rsr = Raphael('map', '700', '1100');

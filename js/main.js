@@ -100,7 +100,7 @@ $(document).ready(function() {
 
 $(document).ready(function(){
 
-    var quotes = $(".quotes"); // found technique on jsfiddle http://stackoverflow.com/questions/12065273/fade-in-out-text-loop-jquery .quotes variable
+    var quotes = $(".quotes"); // found technique on jsfiddle https://stackoverflow.com/questions/12065273/fade-in-out-text-loop-jquery .quotes variable
     var quoteIndex = -1;  // set quoteindex variable -1
     
     function showNextQuote() { //function name

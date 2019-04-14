@@ -1,4 +1,4 @@
-// found here https://github.com/rkuhl/sectionsnap, under MIT license http://en.wikipedia.org/wiki/MIT_License
+// found here https://github.com/rkuhl/sectionsnap, under MIT license https://en.wikipedia.org/wiki/MIT_License
 (function($) {
 	$.fn.sectionsnap = function( options ) {
 		var settings = $.extend({
