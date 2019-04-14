@@ -1,0 +1,692 @@
+<!doctype html>
+<!doctype html>
+<html lang="en">
+    <!-- Open Header-->
+    <head>
+        <!-- Title -->
+        <title>The Hidden Issue</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- meta tags-->
+        <meta name="description" content="Exploring the hidden issue of Homelessness and the housing crisis within England. "/>
+        <meta name="keywords" content="Issue Homelessness Homeless effects children epidemic animation infographic england crisis housing explore"/>
+        <meta name="author" content= "Jonathan Tarrant / JT Design & Development"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+        <!-- ALL REFERENCES TO EACH THIRD-PARTY PROGRAM ALONG WITH LICENSE WILL BE IN THEIR OWN FILE, ALL OTHERS IN MAIN.JS/STYLES.CSS-->
+        
+        <!-- favicons and microsoft logos for smaller devices -->
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- style sheets -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- boostrap framework-->
+        
+        <link rel="stylesheet" href="css/animate.css">    <!-- animate.css for a list of modern but simple css animation techniques -->
+      <!--   <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" /> for lightbox current unused due to content restraints although is fully implemented for future use within the code. --> 
+        <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'><!-- Google fonts, serif. Secure host.-->
+        <link rel="stylesheet" href="css/rrssb.css" /> <!-- rrssbb styles for SVG social media share buttons -->
+        <link rel="stylesheet" href="css/styles.css" type="text/css" /> <!-- Main style sheet containing all personal styles-->
+
+
+        <!-- Jquery library, dynamic host for updates-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> 
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script> <!-- modernizr online host,for bigslide.js dependencies -->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script> <!-- Boostrap.minified javascript file for smooth-scroll and tooltips-->
+        <script type="text/javascript" src="js/main.js"></script> <!-- This document has all the websites javascript, majority written using personal techniques, all functions are seperately commented.-->
+        <script src="js/jquery.easing.1.3.js" type="text/javascript"></script> <!-- Easing.js for easing animations within javascript -->
+        <script src="js/jquery-ui.js"></script> <!-- Jquery UI -->
+        <script src="js/bigSlide.js"></script> <!-- bigSlide.js for fold-out panels, e.g menu and .slideContainer-->
+        <script src="js/wow.js" type="text/javascript"></script> <!-- Super Lightweight plugin which loads element when it becomes visible in viewport -->
+        <script src="js/jquery-sectionsnap.js" type="text/javascript"></script> <!-- Lightweight Jquery snap-to-section plugin -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt5lnUutvOYUbCju_kY7lsE-8vwNmH9ag"> </script> <!-- Loading google maps javascript API feed using my own personal key -->
+        <script type="text/javascript" src="js/locationMap.js"></script> <!-- My personal javascript file to customise and interact with google maps -->
+        <script type="text/javascript" src="js/parralax.js"></script> <!-- Lightweight parralax function, refered inside but modif-->
+        
+       <!-- <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> unused lightbox plugin ready for future implementation -->  
+       
+        <script> new WOW().init(); </script>      
+
+        <!-- PRELOADER -->
+        <script type="text/javascript" >	$(window).load(function() {
+        $(".preload").fadeOut("slow");;
+        });
+        </script>
+        
+        
+        <!-- INCLUDE HTML -->
+        <script> 
+        $(function(){
+          $("#includedContent").load("extend.html"); 
+        });
+        </script>
+
+    </head>
+
+    <!-- The body is used to send position information to #navbar to show the correct active section, this is done through bootstrap with data-spy -->
+    <!-- BODY OPEN-->
+    <body data-spy="scroll" data-target="#navbar" class="push"> <!-- class "push" shows what will be pushed left onclick of navigation slidebar. --> 
+        <!-- PRELOADER --> 
+        <!-- This is a very simple hand-written preloader, with javascript in main.js. It will show a small logo and animation-looped GIF until the full load document.ready of the first section of the website, this stops the website lagging and showing before it loads. Simple but effective. --> 
+    <div class="preload"> 
+        <img class="loadLogo" src="img/loadLogo.png"/>
+        <p class="ptitle">The Hidden Issue</p> 
+        <img src="img/icon/Preloader_3.gif"/>
+       <p>  Loading, please wait.</p> 
+    </div>
+        <!-- MOBILE ADAPTATION-->
+        <!-- This works in the same way as the above preloader, but it checks for device size. Unfortunately due to the nature of interactivity within the website it is not appropiate to work, function and view on a mobile device without an entire seperate website specifically for under 768px. Because of this I have made a query to show a message telling the user the website is unavailable on mobile devices. But not on tablet and desktop. --> 
+        <div class="mobile">
+        
+        <img class="loadLogo" src="img/loadLogo.png"/>
+        <p class="ptitle">The Hidden Issue</p> 
+        <p> Unfortunately this website is not available on mobile.</p> 
+        <p>Alternatively please view on a tablet or desktop computer.</p>
+    </div>
+        
+        <!-- CONTENT PUSH OPEN-->
+       
+        <!-- NAV OPEN--><!-- Panel will contain everything that slides from right to left when menu button is clicked. --> 
+        <nav id="menu" class="panel" role="navigation">
+            <!-- custom exit button on panel--> 
+            <a href="#" id="exit"></a>           
+            <div id="navTitle">Menu</div>
+            <div id="navbar">
+                <ul class="nav" >
+                    <li id="nav1"><a href="#1">Introduction</a></li>
+                    <li id="nav2"><a href="#2">The Statistics</a></li>
+                    <li id="nav3"><a href="#3">The Causes</a></li>
+                    <li id="nav4"><a href="#4">Health Check</a></li>
+                    <li id="nav5"><a href="#5">Support</a></li>
+                </ul>
+            </div>
+            <ul class="def2"> <!-- These link to interactive parts within the website, as a short key. --> 
+                <li><a href="#1"><div class="lightboxToggle def">Definitions of Homelessness</div></a></li>
+                <li><a href="#2"><div class="toggle def">Check statistics in your region</div></a></li>
+            </ul>
+        <!-- NAV CLOSE-->
+            <div class="signature"><p>Created for The Hidden Issue</p><p>Designed & Developed by Jon Tarrant</p>
+            </div>
+        </nav>
+        <!-- content to push left open--> 
+         <div class="wrap push">
+             <!-- section 1 open --> 
+             <div id="1" class="section1  section  row nomargin "> 
+                 
+                 <!-- burger menu top right -->
+                <a href="#menu" class="menu-link">&#9776;</a>
+                 
+                 <!-- open bullet-point navigation --> 
+                 <!-- This navagition is controlled by a mousemove handler in main.js javascript, it will check the current active class within the navigation and pass it to its corresponding children. --> 
+                <ul id="miniNav" class="miniNav">
+                    <li><a href="#1" id="nav11"class="child"></a></li>
+                    <li><a href="#2" id="nav22"class="child"></a></li>
+                    <li><a href="#3" id="nav33" class="child"></a></li>
+                    <li><a href="#4" id="nav44"class="child"></a></li>
+                    <li><a href="#5" id="nav55" class="child"></a></li>
+                 </ul>
+                 <!-- Poster is what is shown if video does not play - jt-->
+                 <div id="overlay">
+                     <!-- flip animation container --> 
+                     <div class="logo-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="swap">
+                            <div class="front">
+                                <img src="img/logo-front.png"/>
+                            </div>
+                            <div class="back">
+                                <img src="img/logo-back.png"/>
+                            </div>
+                          
+                        </div>
+                    </div>
+                     <!-- first fade-in main-title --> 
+                    <div class="wow fadeInUp" id="title-1" >
+                        <div id="text-container">
+                        "Becoming homeless can make you lose your 
+                            <span class="quotes">home.</span>
+                            <span class="quotes">security.</span>
+                            <span class="quotes">health.</span>
+                            <span class="quotes">family.</span>
+                            <span class="quotes">lifestyle.</span>"<!-- quotes fade in one by another, leaving sentence with multiple ends. --> 
+                        </div>
+                    </div>
+                     
+                    <div class="wow fadeInUp" id="sub-title-1" >
+                        There is alot more to homelessness then just losing a home.
+                    </div>
+                     <!-- Toggles a bespoke text lightbox I created. --> 
+                     <div class="lightboxToggle lightboxToggleStyle">Find out more about the definitions of Homelessness</div>
+                     <!-- a lightweight pure CSS lightbox --> 
+                     <div class="lightbox">
+                         
+                         <div id="information"><!-- uses the same javascript toggleclass to close.--> 
+                         <div class="lightboxToggleClose lightboxToggle">Close</div>
+                         <div id="info-title">What is homelessness?</div>
+                         <div id="info-left">In a broad sense the law defines somebody as being homeless if they do not have
+a legal right to occupy any accommodation, or if their accommodation is unsuitable
+to live in. This can include a large range of circumstances, including but not restricted
+to, the following: 
+                             <ul>
+                                 <li>having no accommodation at all </li> 
+                                 <li>having accommodation that is not reasonable to live in, even in the short-term (eg violence or health reasons)                                  </li> 
+                                 <li>having a legal right to accommodation that you cannot access (eg if you have been illegally evicted)</li>
+                                 <li>living in accommodation you have no legal right to occupy (eg temporarily staying with friends)                                       </li>
+                             </ul> 
+                        </div>
+                        <div id="info-right">Unfortunately many people only associate homelessness with sleeping rough, but this
+ignores the range and scale of the current problem. The reality is that the majority of
+homeless people are families or single people who are not ‘sleeping rough’. Many
+may be staying with friends and relations on a temporary basis. Whilst others live in
+temporary accommodation, such as hostels, bed and breakfast hotels, refuges
+and sometimes night shelters. For many, this means living standards are poor, that is
+detrimental to their health and well-being.<span>"Homelessness means loss, loss, loss... It is not just the loss of a home,
+maybe of a partner or of family life, of supportive friends or of a known
+community. It involves the loss of confidence and self-esteem. The loss of
+opportunities. These losses are less obvious... and the long-term effects on
+children in particular, and the stigma of homelessness, are not ever really
+taken on board. It’s not just the reasons why people become homeless that
+are important but what it does to you." - Health Worker </span> </div>
+                         </div>
+                     </div>
+                    <div class="wow fadeIn" id="sub-title-2" >
+                        Scroll Down <!-- arrow fades downwards, all bespoke--> 
+                    <a href="#2" class="wow fadeOutDown scrolldown delay-9 infinite"></a>
+                        
+                    </div>
+                     
+                 </div>
+                 <!-- A looped video background with video formats to support most modern browsers, except safari. If video does not show the poster"" attribute shows in its place. --> 
+                <video id="bgvid" autoplay loop poster="img/video-background.jpg">
+
+                    <source src="img/justWalkBy.mp4" type="video/ogv" />
+                    <source src="mov/justWalkBy.webm" type="video/webm" />
+                    <source src="mov/justWalkBy.ogv" type="video/mp4" />  
+
+                </video> 
+                <!-- Vector pause/play mute/unmute buttons for the video. Change onclick using javascript from main.js, all bespoke made by myself. --> 
+                <a id="play-pause-button" onclick="vid_play_pause()">
+                     <img src="img/icon/pause-icon.png" id="switcher" />
+                </a>
+                <a id="mute-unmute-button" onclick="muteUnMute()">
+                     <img src="img/icon/unmute-icon.png" id="switcher2" />
+                </a>
+                 
+                <div id="twitter-feed">
+                                <!-- RSS FEED, Twitter API key converted into html using personal hosted google script                    https://script.google.com/macros/s/AKfycbzwHWWfqd2qsHdUBlyG3iZmS_09-UQCxHGebzloao7AmZMbVYs to create feed information, then using third party free service to pull in information, styling also created by myself -->
+                                <script type="text/javascript" src="http://output64.rssinclude.com/output?type=js&amp;id=980154&amp;hash=eb0e59c9c3c593dc0712659231edb846"></script>
+
+                    <a class="rssLink" href="https://twitter.com/TheHiddenIssue">Follow</a>
+                    
+                </div>
+                 
+                <div id="blog-feed">
+                     <!-- RSS FEED, using blogger rss feed i used a free converter to output the html. styling was done entire myself and kept consistant -->
+                    <script type="text/javascript" src="http://output98.rssinclude.com/output?type=js&amp;id=980152&amp;hash=226fed870ea243f9fad0c82a86d45526"></script>
+
+                     <a class="rssLink" href="http://TheHiddenIssue.blogspot.co.uk">Read More</a>
+
+                </div>
+                 
+                <div id="facebook-feed">
+                <!-- RSS FEED, using facebook rss feed i used a free converter to output the html. styling was done entire myself and kept consistant -->
+                <script type="text/javascript" src="http://output20.rssinclude.com/output?type=js&amp;id=980150&amp;hash=8444ab533a00061b3f6f668bbc16aa9a"></script>                
+
+                <a class="rssLink" href="https://www.facebook.com/TheHiddenIssue">Like</a>
+
+                </div>
+                 <!-- Click between to toggle the social media feeds. --> 
+                 <a href="#" id="bg-link"></a>
+                 <a href="#" id="tw-link"></a>
+                 <a href="#" id="fb-link"></a>
+            </div>
+
+             
+             <!-- Section 2 --> 
+            <div id="2" class="section2  section row nomargin"> 
+                
+                <div class="col-md-12 clearfix nopadding">
+                    <div class="col-md-5 col-md-offset-1 text-left animation-2">
+                        <!-- Fade in titles with delays and animations --> 
+                        <div class="wow block fadeIn title "><span>The Statistics</span></div>
+                        
+                        <div class="wow fadeInUp delay-2 block">Currently in England there are: </div>
+                        
+                        <div class="wow  "><span class="wow fadeInLeft delay-4 strong">13140</span>   
+                            <span class="wow fadeInLeft delay-5">households accept as homeless.
+                                
+                            </span>  <!-- Pure css tooltip --> 
+                             <div class=" wow tooltips fadeIn delay-6">
+                                    <img src="img/tooltip.jpg" /> 
+                                    <span> <strong>Definition</strong><br /> These are households where the applicable council has found to be homeless. They are not all accepted as being owed a duty by the council. 
+                                    </span> 
+                                </div>
+                        </div>
+                                                    <!-- emphasis on numbers --> 
+                        <div class="wow  "><span class="wow fadeInLeft delay-8 strong">4850</span>   
+                            <span class="wow fadeInLeft delay-9">households found to be homeless but not in priority need.    
+                            </span> 
+                            <div class=" wow tooltips fadeIn delay-9 ">
+                                    <img src="img/tooltip.jpg" /> 
+                                    <span> <strong>Definition</strong><br /> These are households accepted as homeless but found not to be in priority need by the local council. They usually wait a substanially extended time for rehousing. 
+                                    </span> 
+                            </div>
+                        </div>
+                        <div class="wow  "><span class="wow fadeInLeft delay-12 strong">2050</span>   
+                            <span class="wow fadeInLeft delay-13">households found to be 'intentionally homeless'.
+                            </span> 
+                            <div class=" wow tooltips fadeIn delay-14">
+                                <img src="img/tooltip.jpg" /> 
+                                <span> <strong>Definition</strong><br /> Being intentionally homeless means that you are homeless because you left accommodation that you could have stayed in or a deliberate action create homelessness. E.g Not paying rent when you can afford it.
+                                </span> 
+                            </div>
+                        </div>
+                        <div class="wow  "><span class="wow fadeInLeft delay-16 strong">8780</span>   
+                            <span class="wow fadeInLeft delay-17">families with children accepted as homeless. 
+                               
+                            </span> 
+                             <div class=" wow tooltips fadeIn delay-18">
+                                    <img src="img/tooltip.jpg" /> 
+                                    <span> <strong>Definition</strong><br /> Households with children accepted as homeless by the local council. These households are usually priority due to effects of homelessness on children.
+                                    </span> 
+                            </div>
+                        </div>
+                        <div class="wow fadeInLeft delay-20 ">This equates to a massive <span class="wow fadeInLeft delay-21"><span class="wow strong pulse infinite ">28820</span> homeless households in england.</span>
+                        </div> <!-- toggle slidecontainer map --> 
+                        <div id="mapToggle" class="toggle">Check the statistics in your region ></div>
+                        <div class="note wow fadeIn delay-4 duration-1">
+All statistics are from the most recent homelessness report by each local government housing authority at the time. Although there are estimated to be many more homeless households in England which have not declared themselves homeless.
+                        </div>
+                    </div>
+                    <!-- map container --> 
+                    <div id="mapContainer" class="col-md-6">
+                        <div id="includedContent"></div>
+                         <!-- slide container / map--> 
+                        <div class="slideContainer col-md-12">
+                            <div id="map" class="united-kingdom">
+                            <!-- Raphaël JS Map Here -->
+                            </div>
+                            <!-- map names and dynamic info--> 
+                            <div class="mapTitle"><div class="exitButton toggle" href="#"></div>Click your region to discover your local statistics.</div>
+                            <div id="region-text">Homelessness Statistics for
+                                <span id="region-name" class="text-left">England</span>
+                                <div id="region-info" class="text-left">
+
+                                    <span>Families with children accepted as homeless</span>
+                                    <p>8780</p>
+                                    <span>Households accepted as homeless</span>
+                                    <p>13140</p>
+                                    <span>Households found to be "intentionally homeless"</span>
+                                    <p>2050</p>
+                                    <span>Households found to be homeless but not in priority need</span>
+                                    <p>4850</p>
+                                    
+
+                                </div>
+                            <script src="js/raphael-min.js"></script> <!-- raphael svg converter  --> 
+                            <script src="js/map.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+                <!-- section 3 --> 
+            <div id="3" class="section3 section  row nomargin">
+                <div style="position:absolute; top:0px; left:0px; " class="r-parallax">
+                     <div id="Parallax"> <!-- Parralax background controller --> 
+                        <img src="img/section-3-background22.png" />
+                     </div>
+                </div>
+                <div class="trackOverlay" > <!-- overlay div for mouse listener--> 
+                    <div class="section3-info col-md-2 wow fadeInLeft delay-1">
+                        <p class="strong">What causes homelessness?</p>
+                        <p><strong>Sadly, many people view homelessness as the result of personal failings, and consider that if the economy is going well, there is no excuse for being financially stable.</strong></p>
+                        <p>But this belief is not justtified by the facts, which show that homelessness is caused by an array of complex interplay between a person's individual circumstances and adverse 'structural' factors not within their direct control.</p>
+                        <p>The reality is that a number of issues can result in homelessness, both structural and personal.</p>
+                        
+                        <div>Personal Causes
+                            <ul>
+                                <li>An array of Individual factors</li>
+                                <li>Family background</li>
+                                <li>From an institutional background</li>
+                            </ul>
+                        </div>
+                        <div>
+                        Structural Causes
+                            <ul>
+                                <li>Unemployment</li>
+                                <li>Poverty</li>
+                                <li>Lack of affordable housing</li>
+                                <li>Structuring of Government policies</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div> <!-- circle container --> 
+                <div class="circles col-md-11 col-md-offset-1 clearfix">
+        
+                    <div  id="content-1" class="circle wow rollIn ">
+                        <img src="img/financial_vector.jpg" class="top">
+                        <img src="img/financial_vector_hover.jpg" class="bottom">
+                     </div>    
+                    
+                    <div id="content-2" class="circle wow rollIn ">
+                        <img src="img/family_vector.jpg" class="top">
+                        <img src="img/family_vector_hover.jpg" class="bottom">
+                    </div>
+                    
+                    <div  id="content-3" class="circle wow rollIn ">
+                        <img src="img/government_vector.jpg" class="top">
+                        <img src="img/government_vector_hover.jpg" class="bottom">
+                    </div>          
+                    <div  id="content-4" class="circle wow rollIn ">
+                        <img src="img/mental_vector.jpg" class="top">
+                        <img src="img/mental_vector_hover.jpg" class="bottom">
+                    </div>      
+
+                </div>
+                    <!-- all circle specific containers --> 
+                <div class="collapse-container clearfix col-md-offset-2 col-md-8">
+                    
+                    <div class="collapse-1 content-collapse ">
+                        <div class="collapse-quote col-md-5 col-md-offset-1">"The average person is just two missed pay checks away from being homeless."
+                        </div>
+                        <div class="collapse-text col-md-6 ">With the average person only two missed pay checks away from starting a process which could leave them homeless and over 80,000 children waking up in temporary accomodation each day due to financial restraints, it's no wonder it is the most common factor of homelessness. <br/><br/>Although it can also be solely finanicial issues, factors such as lack of social support, debts – especially mortgage repayments, lack of affordable housing and rent arrears. This cause of homelessness can also stem from lack of qualifications, poor physical and mental health, relationship breakdown and crime involvement resulting in unemployment.
+                        </div>
+                  <!--------------------- Due to ethics could not create media, nor find relevant creative commons media for this lightbox although it is fully implemented and working.     
+                        <div class="collapse-video col-md-2">
+                            <ul class="gallery clearfix">
+                                <li><a rel="prettyPhoto" href="https://youtu.be/0An5Yn9hb4k" rel="prettyPhoto[movies]" title="Tron!"><img class="thumbnail" src="img/video_placeholder.png"/></a>
+                                </li>
+                                <li><a rel="prettyPhoto" href="https://youtu.be/0An5Yn9hb4k" rel="prettyPhoto[movies]" title="Tron!"><img class="thumbnail" src="img/video_placeholder.png"/></a></li>
+                            </ul>
+                        </div> ---------------------> 
+                        
+                    </div>
+                    
+                    <div class="collapse-2 content-collapse ">
+                  <div class="collapse-quote col-md-5 col-md-offset-1">"Our upbringing plays a very critical part of our future, how we manage ourselves and how the things around us can effect us, and even mental illness. This can effect a persons future stability almost directly."
+                        </div>
+                        <div class="collapse-text col-md-6 ">Homelessness can also occur from family, upbringing and relationships. Family disputes and breakdown can leave people with nowhere to stay as they are no longer welcome in the family home. Also having parents with alcohol or drug problems may leave some youth feeling at risk of abuse at home or they may not be comfortable in that environment. <br/><br/>
+Upbringing issues such as sexual and physical abuse can not only have immediate risks of homelessness due to feeling unsafe in their current household, but can also have long term mental effects which leave them unable to work and leave them financially homeless.<br/><br/>
+The most common of these causes are relationship background, when a spouse leaves their partner either with a debt, rent arrears or a big financial burden. This can also create homelessness from a partner not having a legal right to occupy a household and to have nowhere to stay.
+
+                        </div>
+                        
+                    <!--------------------------- Due to ethics could not create media, nor find relevant creative commons media for this lightbox although it is fully implemented and working.    <div class="collapse-video col-md-2">
+                            <ul class="gallery clearfix">
+                                <li><a rel="prettyPhoto" href="http://trailers.apple.com/movies/disney/tronlegacy/tronlegacy-tsr1_r640s.mov?width=640&height=272" rel="prettyPhoto[movies]" title="Tron!"><img class="thumbnail" src="img/video_placeholder.png"/></a>
+                                </li>
+                                <li><a rel="prettyPhoto" href="http://trailers.apple.com/movies/sony_pictures/karatekid/karatekid-tlr3_r640s.mov?width=640&height=304" rel="prettyPhoto[movies]" title="Tron!"><img class="thumbnail" src="img/video_placeholder.png"/></a></li>
+                            </ul>
+                        </div>---------------------> 
+                    </div>
+                    
+                    <div class="collapse-3 content-collapse ">
+                        <div class="collapse-quote col-md-5 col-md-offset-1">"What shocks me is that so many people leave care and become homeless, and when you're homeless you get into crime, prostitution and drugs, and it is a vicious circle. That's what we need to change."
+                        </div>
+                        <div class="collapse-text col-md-6 ">Institutional and armed forces causes are usually more complicated cases, they are very individual problems usually associated with mental and physical conditions. Institutional background could be anyone coming from or growing up within a care home or facility. This also applies to those coming from prison. The armed forces homeless population in London alone is estimated to be between 2,000 and 3,000 by the Ministry of Defence.
+                        </div>
+                      <!---------------- Due to ethics could not create media, nor find relevant creative commons media for this lightbox although it is fully implemented and working.   <div class="collapse-video col-md-2">
+                            <ul class="gallery clearfix">
+                                <li><a rel="prettyPhoto" href="http://trailers.apple.com/movies/disney/tronlegacy/tronlegacy-tsr1_r640s.mov?width=640&height=272" rel="prettyPhoto[movies]" title="Tron!"><img class="thumbnail" src="img/video_placeholder.png"/></a>
+                                </li>
+                                <li><a rel="prettyPhoto" href="http://trailers.apple.com/movies/sony_pictures/karatekid/karatekid-tlr3_r640s.mov?width=640&height=304" rel="prettyPhoto[movies]" title="Tron!"><img class="thumbnail" src="img/video_placeholder.png"/></a></li>
+                            </ul>
+                        </div>-----------------------> 
+                    </div>
+                    
+                    <div class="collapse-4 content-collapse">
+                        <div class="collapse-quote col-md-5 col-md-offset-1">"About a quarter of the population will experience some kind of mental health problem in the course of a year, with mixed anxiety and depression the most common mental disorder in Britain"
+                        </div>
+                        <div class="collapse-text col-md-6 ">Physical and Mental illness can also be a caused from being homeless, but many also become homeless from this cause. Unfortunately this can be a vicious circle whilst trying to rehabilitate a homeless patient back into normal society. Thankfully in this country the NHS provides free healthcare to all, but this doesn’t necessarily mean that they can afford prescribed medication and they often leave illness until it becomes in some cases severe. <br/><br/>
+Mental illness can in many cases lead to a person feeling un-motivated and un-fit to work. When social support isn’t available this can lead to further issues, financial and eventually ending in homelessness. With a quarter of the population estimated to experience a mental health problem within their lifetime, the problem is very relevant.
+
+                        </div>
+                        
+                       <!---------------------- Due to ethics could not create media, nor find relevant creative commons media for this lightbox although it is fully implemented and working. <div class="collapse-video col-md-2">
+                            <ul class="gallery clearfix">
+                                <li><a rel="prettyPhoto" href="http://trailers.apple.com/movies/disney/tronlegacy/tronlegacy-tsr1_r640s.mov?width=640&height=272" rel="prettyPhoto[movies]" title="Tron!"><img class="thumbnail" src="img/video_placeholder.png"/></a>
+                                </li>
+                                <li><a rel="prettyPhoto" href="http://trailers.apple.com/movies/sony_pictures/karatekid/karatekid-tlr3_r640s.mov?width=640&height=304" rel="prettyPhoto[movies]" title="Tron!"><img class="thumbnail" src="img/video_placeholder.png"/></a></li>
+                            </ul>
+                        </div> --------------------> 
+                        
+                    </div>
+                    
+                </div>
+               
+             </div>
+             
+             <!--section 4 --> 
+            <div id="4" class="section4  section row nomargin col-md-12 nopadding">
+                <!-- items --> 
+                <div class="col-md-12  middle nopadding">
+                   <div class="healthCheck1 healthCheck  wow fadeInRight duration-1">
+                        <div id="graphic-1" class="graphic left">
+                            <p><span class="block large">39%</span>said they have taken or are recovering from a <span class="bold">drug problem</span></p>
+                        </div>
+                   
+                    <img  id="alcohol" class=" nopadding  man"src="img/man-drug.png"/>
+                  
+                        <div id="graphic-2" class="graphic right">
+                            <p><span class="block large">27%</span> have or are recovering from an <span class="bold">alcohol problem.</span></p>
+                        </div>
+                  </div>
+                <div class="healthCheck2 healthCheck wow fadeInRight duration-1">
+                 
+                        <div id="graphic-3" class="graphic left">
+                            <p><span class="block large">73%</span> of people reported <span class="bold">physical health problems.</span></p>
+                        </div>
+                   
+                    <img id="injured" class="nopadding  man" src="img/man-injured.png"/>
+                 
+                        <div id="graphic-4" class="graphic right">
+                            <p><span class="block large">41%</span> said this was a <span class="bold">long-term problem.</span></p>
+                        </div>
+               </div>        
+                    <!-- main logo container with flipper onhover--> 
+               <div class="health-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="swap">
+                        <div class="front">
+                            <img class="healthTitle" src="img/healthCheck.jpg"/>
+                        </div>
+                        <div class="back">
+                            <img class="healthTitle"src="img/healthCheck-2.jpg"/>
+                        </div>
+
+                    </div>
+                </div>
+                    
+                   <div class="healthCheck3 healthCheck wow fadeInLeft duration-1">       
+                                <div id="graphic-5" class="graphic left">
+                                    <p> <span class="block large">35%</span> had been to <span class="bold">A&E over the past six months</span></p>
+                                </div>
+
+                            <img id="ambulance" class="" src="img/man-amubulance.png"/>
+
+                                <div id="graphic-6" class="graphic right">
+                                    <p><span class="block large">26%</span> <span class="bold">admitted to hospital</span> in the past six months.</p>
+                                </div>
+
+                    </div>
+
+                    <div class="healthCheck4 healthCheck wow fadeInLeft duration-1">
+                                <div id="graphic-7" class="graphic left">
+                                    <p><span class="block large">80%</span> reported some form of <span class="bold">mental issue.</span></p>
+                                </div>
+
+                            <img id="mental" class="nopadding man" src="img/man-mental.png"/>
+
+                                <div id="graphic-8" class="graphic right">
+                                    <p><span class="block large">45%</span> had been <span class="bold">diagnosed with a mental health issue.</span></p>
+                                </div>
+
+                    </div>
+
+           
+                
+                </div>
+                <!-- section-4 --> 
+                <div class="col-md-12 nopadding  section4-info">
+                   <div class="col-md-4 col-md-offset-2 wow fadeIn duration-1 info wow fadeInLeft"> <p class="bold">Those with experience of homelessness are also more
+likely to have a unhealthy lifestyle, which can result in longterm
+health problems or worsen existing issues. 
+Despite 90% of those surveyed reporting that they are
+registered with a GP, a large amount of homeless
+people have reported that they are not receiving help with their
+health problems.</p>
+<p>* The Health and Wellbeing of people who are homeless: findings from a national
+audit Homeless Link (2010)</p></div>
+                   <div class="col-md-3"> 
+                       <table class="wow fadeInUp duration-1">
+                           <tr>
+                               <th id="topleft">Health Comparison to General Public</th>
+                               <th>Health Issue</th>
+                               <th>Homeless Population</th>
+                               <th id="topright">General Population</th>
+                           </tr>
+                           <tr>
+                               <td rowspan="3" id="bottomleft" class="rowspan">Physical, mental and substance misuse
+issues remain more common among the
+homeless population and at levels that
+are higher than those experienced
+by the general population.</td>
+                               <td >Long Term Physical Health Problems</td>
+                               <td class="bold text-center">41%</td>
+                               <td class="bold text-center">28%</td>            
+                               
+                           </tr>
+                           <tr>
+                               <td > Diagnosed Mental Health Problems</td>
+                               <td class="bold text-center">45%</td>
+                               <td class="bold text-center">25%</td>
+                           </tr>
+                           <tr>
+                               <td >Taken Drugs in Past Month</td>
+                               <td class="bold text-center">36%</td>
+                               <td class="bold text-center" id="bottomright">5%</td>
+                           </tr>
+                       </table>
+                </div>
+                </div>
+                <div class="lightboxToggleStyle">Click the images for more information.</div>                     
+             </div>
+             
+             <!-- section 5--> 
+             
+             <div id="5" class="section5  section row nomargin col-md-12 nopadding">
+                 <!-- google maps canvas--> 
+                 <div id="map-canvas" class="col-md-3"></div>
+                 <div class="col-md-9 content-container ">
+                     <!-- titles --> 
+                     <div class="col-md-5 section5-info ">
+                         <div class="title5"> Support your local charity</div>
+                         <div class="info"> There are many ways we can help stop homelessness in England through volunteering, campaigning and spreading awareness.
+                             Although if you do not have time to help then you can simply donate to help fund their work within your community. 
+                             There are over 150 local homelessness charities in the UK and plotted on the map are 50 of them along with their name, address and where you can either <span class="big">donate</span> or <span class="big">volunteer</span>.
+                         </div>
+                         <!-- onclick changing address and contact details, works with google map above--> 
+                         <div id="info-container" class="info">
+                                  Organisation Name: <div id="name" class="big"></div>
+                                  Address: <div id="address" class="big"></div>
+                                  Contact: <div id="contact" class="big"></div>
+                         </div>
+                         <div id="map-prompt" class="info big">Select your local charity from the map to retrieve their details.
+                         </div>
+                        <!-- svg social media buttons --> 
+                         <ul class="rrssb-buttons clearfix wow fadeInUp delay-1">
+                            <p>Spread the word and share us:</p>
+                            <li class="rrssb-email">
+                                <a href="mailto:?subject=The%20Invisible%20Issue;body=http%3A%2F%2jt344.student.eda.kent.ac.uk">
+                                    <span class="rrssb-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve"><g><path d="M20.111 26.147c-2.336 1.051-4.361 1.401-7.125 1.401c-6.462 0-12.146-4.633-12.146-12.265 c0-7.94 5.762-14.833 14.561-14.833c6.853 0 11.8 4.7 11.8 11.252c0 5.684-3.194 9.265-7.399 9.3 c-1.829 0-3.153-0.934-3.347-2.997h-0.077c-1.208 1.986-2.96 2.997-5.023 2.997c-2.532 0-4.361-1.868-4.361-5.062 c0-4.749 3.504-9.071 9.111-9.071c1.713 0 3.7 0.4 4.6 0.973l-1.169 7.203c-0.388 2.298-0.116 3.3 1 3.4 c1.673 0 3.773-2.102 3.773-6.58c0-5.061-3.27-8.994-9.303-8.994c-5.957 0-11.175 4.673-11.175 12.1 c0 6.5 4.2 10.2 10 10.201c1.986 0 4.089-0.43 5.646-1.245L20.111 26.147z M16.646 10.1 c-0.311-0.078-0.701-0.155-1.207-0.155c-2.571 0-4.595 2.53-4.595 5.529c0 1.5 0.7 2.4 1.9 2.4 c1.441 0 2.959-1.828 3.311-4.087L16.646 10.068z"/></g></svg>
+                                    </span>
+                                    <span class="rrssb-text">email</span>
+                                </a>
+                            </li>
+                            <li class="rrssb-facebook">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=http://Jt344.student.eda.kent.ac.uk" class="popup">
+                                    <span class="rrssb-icon">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
+                                            <path d="M27.825,4.783c0-2.427-2.182-4.608-4.608-4.608H4.783c-2.422,0-4.608,2.182-4.608,4.608v18.434
+                                                c0,2.427,2.181,4.608,4.608,4.608H14V17.379h-3.379v-4.608H14v-1.795c0-3.089,2.335-5.885,5.192-5.885h3.718v4.608h-3.726
+                                                c-0.408,0-0.884,0.492-0.884,1.236v1.836h4.609v4.608h-4.609v10.446h4.916c2.422,0,4.608-2.188,4.608-4.608V4.783z"/>
+                                        </svg>
+                                    </span>
+                                    <span class="rrssb-text">facebook</span>
+                                </a>
+                            </li>
+                            <li class="rrssb-twitter">
+                                <a href="http://twitter.com/home?status=The%20Inivisble%20Issue%3AHomelessness http://jt344.student.eda.kent.ac.uk" class="popup">
+                                    <span class="rrssb-icon">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                             width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
+                                        <path d="M24.253,8.756C24.689,17.08,18.297,24.182,9.97,24.62c-3.122,0.162-6.219-0.646-8.861-2.32
+                                            c2.703,0.179,5.376-0.648,7.508-2.321c-2.072-0.247-3.818-1.661-4.489-3.638c0.801,0.128,1.62,0.076,2.399-0.155
+                                            C4.045,15.72,2.215,13.6,2.115,11.077c0.688,0.275,1.426,0.407,2.168,0.386c-2.135-1.65-2.729-4.621-1.394-6.965
+                                            C5.575,7.816,9.54,9.84,13.803,10.071c-0.842-2.739,0.694-5.64,3.434-6.482c2.018-0.623,4.212,0.044,5.546,1.683
+                                            c1.186-0.213,2.318-0.662,3.329-1.317c-0.385,1.256-1.247,2.312-2.399,2.942c1.048-0.106,2.069-0.394,3.019-0.851
+                                            C26.275,7.229,25.39,8.196,24.253,8.756z"/>
+                                        </svg>
+                                    </span>
+                                    <span class="rrssb-text">twitter</span>
+                                </a>
+                            </li>
+                        </ul>
+                     </div>
+                     <div class="col-md-7 section5-social">
+                         <!-- charity links --> 
+                      <div class="col-md-9 col-md-offset-2 charities-title"> 
+                          <p>Here are four of the biggest homeless charities nationwide.<br/>
+                         Check out there websites for more specialised information and statistics.</p>
+                        <div class="col-md-12 charities wow fadeInRight delay-1">
+                            <a href="http://www.homeless.org.uk/"><img src="img/charity_logo1.png"/></a>
+                            <a href="http://www.salvationarmy.org.uk/"><img src="img/charity_logo2.png"/></a>
+                            <a href="http://www.shelter.org/"><img src="img/charity_logo3.png"/></a>
+                            <a href="http://www.emmaus.org.uk/"><img src="img/charity_logo4.png"/></a>
+                            <a href="http://www.bigissue.org.uk/"><img src="img/charity_logo5.png"/></a>
+                            <a href="http://centrepoint.org.uk/"><img src="img/charity_logo6.png"/></a>
+                         
+                         </div>
+                     </div>
+                         <!-- twitter #homelessness trend tracker --> 
+                         <div class="feedContainer middle wow fadeInUp delay-2">
+                             <p class="txt">See what people are saying about #Homelessness</p>
+                                     <a class="twitter-timeline" data-theme="dark" data-chrome="nofooter transparent noheader noborders noscrollbar" href="https://twitter.com/hashtag/homelessness" data-widget-id="580868160443834368" height="360" width="1000" data-link-color="#e84248">#homelessness Tweets</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>                </div>
+                         
+                     </div>
+ 
+                 </div>
+
+            </div>      
+             
+        </div>
+        <!-- CONTENT PUSH CLOSE-->
+
+        
+        
+        <!-- BODY CLOSE-->
+    </body>
+<!-- bigslide initiate --> 
+    <script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
+    </script>  
+    <!-- rrssb javascript for svg social share icons  --> 
+    <script src="js/rrssb.min.js"></script>
+</html>
